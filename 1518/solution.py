@@ -1,3 +1,6 @@
+# my solutsion:
+
+"""
 class Solution:
     def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
         emptyBottles = numBottles
@@ -5,7 +8,10 @@ class Solution:
             emptyBottles += 1
             numBottles -= numExchange-1
         return emptyBottles
-
-
-sol = Solution()
-print(sol.numWaterBottles(9,3))
+"""
+# best solution:
+"""
+class Solution:
+    def numWaterBottles(self, numBottles: int, numExchange: int) -> int:
+        return numBottles + (numBottles-1)//(numExchange-1)
+"""
