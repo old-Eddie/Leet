@@ -5,8 +5,8 @@ from functools import cache
 
 
 class Solution:
+    @cache
     def successfulPairs(self, spells: List[int], potions: List[int], success: int) -> List[int]:
-        @cache
         def multpliyer(i, j):
             return i*j
         ans = [0]*len(spells)
