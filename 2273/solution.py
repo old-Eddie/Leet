@@ -10,4 +10,5 @@ class Solution:
             if ana[i] != ana[i - 1]:
                 ans.append(words[i])
 
+
         return ans
