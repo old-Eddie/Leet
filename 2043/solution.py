@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Bank:
     def __init__(self, balance: List[int]):
         self.balance = balance
